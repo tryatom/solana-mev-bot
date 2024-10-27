@@ -1,0 +1,22 @@
+{
+  "name": "spectare-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamsIKZ/spectare-bot.git"
+  },
+  "author": "JamsIKZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamsIKZ/spectare-bot/issues"
+  },
+  "homepage": "https://github.com/JamsIKZ/spectare-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
+}
