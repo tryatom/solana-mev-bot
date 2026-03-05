@@ -1,0 +1,30 @@
+[package]
+name = "solana-mev-bot"
+version = "0.8.5"
+edition = "2021"
+authors = ["ATOM <contact@tryatom.com>"]
+description = "Advanced Arbitrage and Sandwich MEV bot for Solana with Jito integration"
+
+[dependencies]
+solana-sdk = "1.17"
+solana-client = "1.17"
+spl-token = "=4.0.0"
+jito-searcher-client = "0.1"
+jito-protos = "0.1"
+tokio = { version = "1", features = ["full", "parking_lot"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
+crossbeam-channel = "0.5"
+rayon = "1.8"
+petgraph = "0.6" # Used for Bellman-Ford cycle detection
+bincode = "1.3"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+opt-level = 3
+panic = "abort"

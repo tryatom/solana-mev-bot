@@ -1,0 +1,17 @@
+[network]
+rpc_url = "http://127.0.0.1:8899"
+ws_url = "ws://127.0.0.1:8900"
+jito_block_engine = "frankfurt.mainnet.block-engine.jito.wtf"
+
+[wallet]
+keypair_path = "~/.config/solana/id.json"
+jito_auth_keypair_path = "~/.config/solana/jito-auth.json"
+
+[strategies.arbitrage]
+enabled = true
+min_profit_lamports = 100000
+max_capital_allocation = 10.0
+
+[strategies.sandwich]
+enabled = false
+target_programs = ["675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"]
