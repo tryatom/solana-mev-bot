@@ -91,3 +91,5 @@ To maximize PnL, consider the following environmental optimizations:
 ## 📄 License & Disclaimer
 
 MIT License. See the `LICENSE` file for details. This is experimental software. The maintainers are not responsible for any lost funds or misconfigured strategies. Use at your own risk.
+ 
+<!-- Documentation update 2 for solana-mev-bot -->
